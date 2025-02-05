@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Rocks</title>
     <link rel="stylesheet" href="../css/products.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
         <a href="index.html" id="label_link">Pet Rocks</a>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="products.html">Products</a>
+        <nav id="navigation">
+            <a class="icon" onclick="openMobileNavigationMenu()" href="#">
+                <img src="../images/hamburger.png">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="content/contact.html">Contact</a>
+            <a href="content/products.html">Products</a>
         </nav>
     </header>
     <div id="main-content">
@@ -76,5 +80,15 @@
         <a href="content/contact.html">Contact</a>
         <a href="content/products.html">Products</a>
     </footer>
+    <script>
+        function openMobileNavigationMenu() {
+            var x = document.getElementById("navigation");
+                if (x.className === "") {
+                    x.className += "responsive";
+                } else {
+                    x.className = "";
+                }
+            }
+    </script>
 </body>
 </html>

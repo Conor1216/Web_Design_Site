@@ -10,7 +10,10 @@
 <body>
     <header>
         <a href="index.html" id="label_link">Welcome</a>
-        <nav>
+        <nav id="navigation">
+            <a class="icon" onclick="openMobileNavigationMenu()" href="#">
+                <img src="images/hamburger.png">
+            </a>
             <a href="index.html">Home</a>
             <a href="content/contact.html">Contact</a>
             <a href="content/products.html">Products</a>
@@ -35,5 +38,17 @@
         <a href="content/contact.html">Contact</a>
         <a href="content/products.html">Products</a>
     </footer>
+    <script>
+        function openMobileNavigationMenu() {
+            var x = document.getElementById("navigation");
+            if (x.className === "") 
+            {
+                x.className += "responsive";
+            } else 
+            {
+                x.className = "";
+            }
+        }
+    </script>
 </body>
 </html>
