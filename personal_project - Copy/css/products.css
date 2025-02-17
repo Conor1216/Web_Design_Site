@@ -43,7 +43,13 @@ nav a:not(.icon) {
         border-radius: 5px;
         margin: 10px;
     }
-
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        max-width: 30%;
+    }
 }
 
 header {
@@ -59,7 +65,7 @@ header {
     font-family: 'Fascinate';
 }
 
-div {
+#tables {
     overflow-x: auto;
 }
 
